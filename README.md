@@ -6,6 +6,8 @@
     <strong>This repository contains the official implementation and pre-trained models of the work "Physically consistent and uncertainty-aware learning of spatiotemporal dynamics".</strong>
 </div>
 
+</div>
+
 <div align="center">
 <img src="https://github.com/HydroPML/PCNO/blob/main/figures/fig01.png" width="100%"/>
 Schematic illustration of the proposed PCNO and DiffPCNO frameworks.
