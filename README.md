@@ -25,15 +25,23 @@ Download the checkpoints and prepare the data.
 ## 1D Kuramoto–Sivashinsky dynamics
 ### PCNO
 Change the path in `PCNO/PCNO/1D_KSE/experiments_test_PCNO.py` at Line 55: `results_path` to save the results.  
-Change the path in `PCNO/PCNO/1D_KSE/experiments_test_PCNO.py` at Line 160: `root =...` to your directory where checkpoints are stored.  
+Change the path in `PCNO/PCNO/1D_KSE/experiments_test_PCNO.py` at Line 160: `root =...` to your directory where checkpoints of PCNO are stored.  
 Change the data path in `PCNO/PCNO/1D_KSE/experiments_test_PCNO.py` (Lines 234-239) to your directory containing the training, validation, and testing datasets.  
 Run `python PCNO/PCNO/1D_KSE/experiments_test_PCNO.py` to predict Kuramoto-Sivashinsky dynamics using PCNO.  
 ### DiffPCNO
 Change the path in `PCNO/DiffPCNO/1D_KSE/KSE_Sampling.py` at Line 57: `results_path` to save the results.  
-Change the path in `PCNO/DiffPCNO/1D_KSE/KSE_Sampling.py` at Line 193: `root =...` to your directory where checkpoints are stored.  
-Change the data path in `PCNO/PCNO/1D_KSE/experiments_test_PCNO.py` (Lines 299-306) to your directory containing the training, validation, and testing datasets.  
-Change the path in `PCNO/DiffPCNO/1D_KSE/KSE_Sampling.py` at Line 765: `root =...` to save the visualization results.  
+Change the path in `PCNO/DiffPCNO/1D_KSE/KSE_Sampling.py` at Line 193: `root =...` to your directory where checkpoints of DiffPCNO are stored.  
+Change the path in `PCNO/DiffPCNO/1D_KSE/KSE_Sampling.py` at Line 219: `path_model_con =...` to your directory where checkpoints of PCNO are stored.  
+Change the data path in `PCNO/DiffPCNO/1D_KSE/KSE_Sampling.py` (Lines 299-306) to your directory containing the training, validation, and testing datasets.  
+Change the path in `PCNO/DiffPCNO/1D_KSE/KSE_Sampling.py` at Line 765: `movie_dir =...` to save the visualization results.  
 Run `PCNO/DiffPCNO/1D_KSE/KSE_Sampling.py` to obtain prediction results `pred` and uncertainty results `pred_std` using DiffPCNO.  
+### PCNO-Refiner
+Change the path in `PCNO/PCNO-Refiner/KSE_Sampling.py` at Line 54: `results_path` to save the results.  
+Change the path in `PCNO/PCNO-Refiner/KSE_Sampling.py` at Line 189: `root =...` to your directory where checkpoints of PCNO-Refiner are stored.  
+Change the path in `PCNO/PCNO-Refiner/KSE_Sampling.py` at Line 214: `path_model_con = ...` to your directory where checkpoints of PCNO are stored.  
+Change the data path in `PCNO/PCNO-Refiner/KSE_Sampling.py` (Lines 289-296) to your directory containing the training, validation, and testing datasets.  
+Change the path in `PCNO/PCNO-Refiner/KSE_Sampling.py` at Line 708: `movie_dir =...` to save the visualization results.  
+Run `PCNO/PCNO-Refiner/KSE_Sampling.py` to obtain prediction results `pred` and uncertainty results `pred_std` using PCNO-Refiner.  
 
 ## 2D Kolmogorov turbulent flow
 
