@@ -45,17 +45,17 @@ Run `PCNO/PCNO-Refiner/KSE_Sampling.py` to obtain prediction results `pred` and 
 
 ## 2D Kolmogorov turbulent flow
 ### PCNO
-Change the path in `PCNO/PCNO/2D_Kolmogorov/experiments_test_PCNO.py` at Line 54: `results_path` to save the results.  
-Change the data path in `PCNO/PCNO/2D_Kolmogorov/experiments_test_PCNO.py` at Line 57: `data_path` to your directory containing the NS datasets. 
-Change the path in `PCNO/PCNO/2D_Kolmogorov/experiments_test_PCNO.py` at Line 193: `root =...` to your directory where checkpoints of PCNO are stored.   
-Run `PCNO/PCNO/2D_Kolmogorov/experiments_test_PCNO.py` to predict Kolmogorov turbulent flow  in velocity form using PCNO.  
+Change the path in `PCNO/PCNO/2D_Kolmogorov/experiments_test_PCNO.py` at Line 54: `results_path` to save the results.    
+Change the data path in `PCNO/PCNO/2D_Kolmogorov/experiments_test_PCNO.py` at Line 57: `data_path` to your directory containing the NS datasets.   
+Change the path in `PCNO/PCNO/2D_Kolmogorov/experiments_test_PCNO.py` at Line 193: `root =...` to your directory where checkpoints of PCNO are stored.     
+Run `PCNO/PCNO/2D_Kolmogorov/experiments_test_PCNO.py` to predict Kolmogorov turbulent flow  in velocity form using PCNO.    
 ### DiffPCNO
-Change the path in `PCNO/DiffPCNO/2D_Kolmogorov/Kolmogorov_sampling.py` at Line 56: `results_path` to save the results.  
-Change the data path in `PCNO/DiffPCNO/2D_Kolmogorov/Kolmogorov_sampling.py` at Line 59: `data_path` to your directory containing the NS datasets. 
-Change the path in `PCNO/DiffPCNO/2D_Kolmogorov/Kolmogorov_sampling.py` at Line 209: `root =...` to your directory where checkpoints of DiffPCNO are stored.  
-Change the path in `PCNO/DiffPCNO/2D_Kolmogorov/Kolmogorov_sampling.py` at Line 237: `path_model_con =...` to your directory where checkpoints of PCNO are stored.  
-Change the path in `PCNO/DiffPCNO/2D_Kolmogorov/Kolmogorov_sampling.py` at Line 807 and Line 842: `movie_dir =...` to save the visualization results.  
-Run `PCNO/DiffPCNO/2D_Kolmogorov/Kolmogorov_sampling.py` to obtain prediction results `pred` and uncertainty results `pred_std` using DiffPCNO.  
+Change the path in `PCNO/DiffPCNO/2D_Kolmogorov/Kolmogorov_sampling.py` at Line 56: `results_path` to save the results.    
+Change the data path in `PCNO/DiffPCNO/2D_Kolmogorov/Kolmogorov_sampling.py` at Line 59: `data_path` to your directory containing the NS datasets.   
+Change the path in `PCNO/DiffPCNO/2D_Kolmogorov/Kolmogorov_sampling.py` at Line 209: `root =...` to your directory where checkpoints of DiffPCNO are stored.    
+Change the path in `PCNO/DiffPCNO/2D_Kolmogorov/Kolmogorov_sampling.py` at Line 237: `path_model_con =...` to your directory where checkpoints of PCNO are stored.    
+Change the path in `PCNO/DiffPCNO/2D_Kolmogorov/Kolmogorov_sampling.py` at Line 807 and Line 842: `movie_dir =...` to save the visualization results.    
+Run `PCNO/DiffPCNO/2D_Kolmogorov/Kolmogorov_sampling.py` to obtain prediction results `pred` and uncertainty results `pred_std` using DiffPCNO.    
 ## 2D Real-world flood forecasting
 
 ## 2D and 3D Atmospheric modeling
