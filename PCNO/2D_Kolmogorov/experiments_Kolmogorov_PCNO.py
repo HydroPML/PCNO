@@ -63,7 +63,7 @@ parser.add_argument("--ntest", type=int, default=100, help="test sample size")
 parser.add_argument("--nsuper", type=int, default=None)
 parser.add_argument("--seed", type=int, default=1)
 
-parser.add_argument("--model_type", type=str, default='FNO2d')
+parser.add_argument("--model_type", type=str, default='PCNO2d')
 parser.add_argument("--depth", type=int, default=4)
 parser.add_argument("--modes", type=int, default=12)
 parser.add_argument("--width", type=int, default=20)
@@ -86,7 +86,7 @@ parser.add_argument("--noise_std", type=float, default=0.00, help="amount of noi
 
 args = parser.parse_args()
 
-assert args.model_type in ["FNO2d", "FNO2d_aug",
+assert args.model_type in ["PCNO2d", "FNO2d",
                            "FNO3d", "FNO3d_aug",
                            "GCNN2d_p4", "GCNN2d_p4m",
                            "GCNN3d_p4", "GCNN3d_p4m",
@@ -124,7 +124,7 @@ threeD = args.model_type in ["FNO3d", "FNO3d_aug",
                              "GCNN3d_p4", "GCNN3d_p4m",
                              "GFNO3d_p4", "GFNO3d_p4m",
                              "radialNO3d_p4", "radialNO3d_p4m",
-                             "Unet_Rot_3D"]
+                             "PCNO3d"]
 extension = TRAIN_PATH.split(".")[-1]
 swe = os.path.split(TRAIN_PATH)[-1] == "ShallowWater2D"
 rdb = TRAIN_PATH.split(os.path.sep)[-1][:6] == "2D_rdb"
@@ -197,7 +197,10 @@ writer = SummaryWriter(root)
 ################################################################
 # Model init
 ################################################################
-if args.model_type in ["FNO2d", "FNO2d_aug"]:
+if args.model_type in ["PCNO2d"]:
+    model = PCNO2d(num_channels=num_channels, initial_step=initial_step, modes1=modes, modes2=modes, width=width,
+                  grid_type=grid_type).cuda()
+elif args.model_type in ["FNO2d", "FNO2d_aug"]:
     model = FNO2d(num_channels=num_channels, initial_step=initial_step, modes1=modes, modes2=modes, width=width,
                   grid_type=grid_type).cuda()
 elif args.model_type in ["FNO3d", "FNO3d_aug"]:
@@ -222,24 +225,6 @@ elif "GFNO3d" in args.model_type:
     reflection = "p4m" in args.model_type
     model = GFNO3d(num_channels=num_channels, initial_step=initial_step, modes=modes, time_modes=time_modes,
                    width=width, reflection=reflection, grid_type=grid_type, time_pad=args.time_pad).cuda()
-elif "Ghybrid2d" in args.model_type:
-    reflection = "p4m" in args.model_type
-    model = Ghybrid2d(num_channels=num_channels, initial_step=initial_step, modes=modes, Gwidth=args.Gwidth,
-                      width=width, reflection=reflection, n_equiv=args.n_equiv).cuda()
-elif "radialNO2d" in args.model_type:
-    reflection = "p4m" in args.model_type
-    model = radialNO2d(num_channels=num_channels, initial_step=initial_step, modes=modes, width=width, reflection=reflection,
-                       grid_type=grid_type).cuda()
-elif "radialNO3d" in args.model_type:
-    reflection = "p4m" in args.model_type
-    model = radialNO3d(num_channels=num_channels, initial_step=initial_step, modes=modes, time_modes=time_modes,
-                       width=width, reflection=reflection, grid_type=grid_type, time_pad=args.time_pad).cuda()
-elif args.model_type == "Unet_Rot2d":
-    model = Unet_Rot(input_frames=initial_step * num_channels, output_frames=num_channels, kernel_size=3, N=4).cuda()
-elif args.model_type == "Unet_Rot_M2d":
-    model = Unet_Rot_M(input_frames=initial_step * num_channels, output_frames=num_channels, kernel_size=3, N=4, grid_type=grid_type, width=width).cuda()
-elif args.model_type == "Unet_Rot_3D":
-    model = Unet_Rot_3D(input_frames=initial_step * num_channels, output_frames=num_channels, kernel_size=3, N=4, grid_type=grid_type, width=width).cuda()
 else:
     raise NotImplementedError("Model not recognized")
 
