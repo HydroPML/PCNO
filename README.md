@@ -19,4 +19,4 @@ Schematic illustration of the proposed PCNO and DiffPCNO frameworks.
 - The datasets for the KSE, Kolmogorov flow, and atmospheric modeling are available via the [Zenodo repository](https://doi.org/10.5281/zenodo.17410273).  
 - The datasets for the flood forecasting are available at the [Zenodo repository](https://doi.org/10.5281/zenodo.14017092).
 ## Model weights
-You can download the model weights for PCNO, DiffPCNO, and PCNO-Refiner from 
+You can download the model weights for PCNO, DiffPCNO, and PCNO-Refiner from [Link](https://drive.google.com/drive/folders/1EaczWpBe6HK5dDQXSxTSkW8yzl6mO4wE?usp=sharing)
