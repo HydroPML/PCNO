@@ -26,10 +26,14 @@ Download the checkpoints and prepare the data.
 ### PCNO
 Change the path in `PCNO/PCNO/1D_KSE/experiments_test_PCNO.py` at Line 55: `results_path` to save the results.  
 Change the path in `PCNO/PCNO/1D_KSE/experiments_test_PCNO.py` at Line 160: `root =...` to your directory where checkpoints are stored.  
-Change the data path in `PCNO/PCNO/1D_KSE/experiments_test_PCNO.py` (lines 234-239) to your directory containing the training, validation, and testing datasets.  
+Change the data path in `PCNO/PCNO/1D_KSE/experiments_test_PCNO.py` (Lines 234-239) to your directory containing the training, validation, and testing datasets.  
 Run `python PCNO/PCNO/1D_KSE/experiments_test_PCNO.py` to predict Kuramoto-Sivashinsky dynamics using PCNO.  
 ### DiffPCNO
-
+Change the path in `PCNO/DiffPCNO/1D_KSE/KSE_Sampling.py` at Line 57: `results_path` to save the results.  
+Change the path in `PCNO/DiffPCNO/1D_KSE/KSE_Sampling.py` at Line 193: `root =...` to your directory where checkpoints are stored.  
+Change the data path in `PCNO/PCNO/1D_KSE/experiments_test_PCNO.py` (Lines 299-306) to your directory containing the training, validation, and testing datasets.  
+Change the path in `PCNO/DiffPCNO/1D_KSE/KSE_Sampling.py` at Line 765: `root =...` to save the visualization results.  
+Run `PCNO/DiffPCNO/1D_KSE/KSE_Sampling.py` to obtain prediction results `pred` and uncertainty results `pred_std` using DiffPCNO.  
 
 ## 2D Kolmogorov turbulent flow
 
