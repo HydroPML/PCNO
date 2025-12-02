@@ -47,7 +47,7 @@ Run `PCNO/PCNO-Refiner/KSE_Sampling.py` to obtain prediction results `pred` and 
 
 ## 2D Real-world flood forecasting
 
-## 2D abd 3D Atmospheric modeling
+## 2D and 3D Atmospheric modeling
 
 # 👻​ Training 
 ## 1D Kuramoto–Sivashinsky dynamics
@@ -57,6 +57,6 @@ Run `PCNO/PCNO-Refiner/KSE_Sampling.py` to obtain prediction results `pred` and 
 
 ## 2D Real-world flood forecasting
 
-## 2D abd 3D Atmospheric modeling
+## 2D and 3D Atmospheric modeling
 
 # ☄️​ Fine-tuning
