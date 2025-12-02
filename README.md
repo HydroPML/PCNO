@@ -40,3 +40,5 @@ Download the checkpoints and prepare the data.
 ## 2D Real-world flood forecasting
 
 ## 2D abd 3D Atmospheric modeling
+
+# ☄️​ Fine-tuning
