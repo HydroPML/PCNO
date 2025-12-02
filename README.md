@@ -23,6 +23,12 @@ You can download the model weights for PCNO, DiffPCNO, and PCNO-Refiner from [Li
 # 🎰 Zero-shot Inference and Sampling
 Download the checkpoints and prepare the data.
 ## 1D Kuramoto–Sivashinsky dynamics
+### PCNO
+Change the path in `PCNO/PCNO/1D_KSE/experiments_test_PCNO.py` at Line 55: `results_path` to save the results.
+Change the path in `PCNO/PCNO/1D_KSE/experiments_test_PCNO.py` at Line 160: `root =...` to your directory where checkpoints are stored.
+Change the data path in `PCNO/PCNO/1D_KSE/experiments_test_PCNO.py` (lines 234-239) to your directory containing the training, validation, and testing datasets.
+Run `python PCNO/PCNO/1D_KSE/experiments_test_PCNO.py` to predict Kuramoto-Sivashinsky dynamics using PCNO.
+### DiffPCNO
 
 
 ## 2D Kolmogorov turbulent flow
