@@ -82,13 +82,28 @@ Run `PCNO/DiffPCNO/2D_Flood/Flood_sampling.py` to obtain flood forecasting resul
 ## 2D and 3D Atmospheric modeling
 
 # 👻​ Training 
+After configuring the file paths and parameters, run the following code for different spatiotemporal dynamics.  
 ## 1D Kuramoto–Sivashinsky dynamics
-
-
+### PCNO
+`python PCNO/PCNO/1D_KSE/experiments_fixed_viscosity_train_PCNO.py` for Kuramoto–Sivashinsky dynamics with fixed viscosity.    
+`python PCNO/PCNO/1D_KSE/experiments_varying_viscosity_train_PCNO.py` for Kuramoto–Sivashinsky dynamics with varying viscosity.     
+### DiffPCNO
+`python PCNO/DiffPCNO/1D_KSE/experiments_fixed_viscosity_train_DiffPCNO.py` for Kuramoto–Sivashinsky dynamics with fixed viscosity.   
+`python PCNO/DiffPCNO/1D_KSE/experiments_varying_viscosity_train_DiffPCNO.py` for Kuramoto–Sivashinsky dynamics with varying viscosity.   
+### PCNO-Refiner
+`python PCNO/PCNO-Refiner/experiments_1DKSE_fixed_viscosity_train_PCNO-Refiner.py` for Kuramoto–Sivashinsky dynamics with fixed viscosity.     
+`python PCNO/PCNO-Refiner/experiments_1DKSE_varying_viscosity_train_PCNO-Refiner.py` for Kuramoto–Sivashinsky dynamics with varying viscosity.   
 ## 2D Kolmogorov turbulent flow
-
+### PCNO
+`python PCNO/PCNO/2D_Kolmogorov/experiments_Kolmogorov_PCNO.py` for Kolmogorov turbulent flow.      
+### DiffPCNO
+`python PCNO/DiffPCNO/2D_Kolmogorov/experiments_Kolmogorov_train_DiffPCNO.py` for Kolmogorov turbulent flow.    
 ## 2D Real-world flood forecasting
-
+### PCNO
+`python PCNO/PCNO/2D_Flood/experiments_Pakistan_train_PCNO.py` for low-fidelity Pakistan flood forecasting.   
+`python PCNO/PCNO/2D_Flood/experiments_Australia_train_PCNO.py` for high-fidelity Australia flood forecasting.   
+### DiffPCNO
+`python PCNO/DiffPCNO/2D_Flood/experiments_Pakistan_train_DiffPCNO.py` for low-fidelity Pakistan flood forecasting.   
+`python PCNO/DiffPCNO/2D_Flood/experiments_Australia_train_DiffPCNO.py` for high-fidelity Australia flood forecasting.   
 ## 2D and 3D Atmospheric modeling
 
-# ☄️​ Fine-tuning
