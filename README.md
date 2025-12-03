@@ -73,9 +73,9 @@ Run `PCNO/PCNO/2D_Flood/experiments_Flood_test.py` to predict spatiotemporal flo
 Change the path in `PCNO/DiffPCNO/2D_Flood/Flood_sampling.py` at Line 59: `results_path` to save the results.    
 Change timesteps `T` and sample sizes (Line 66-88) in `PCNO/DiffPCNO/2D_Flood/Flood_sampling.py` to the parameters in your downloaded checkpoints.   
 Change the space sizes `Sy` and `Sx` (Line 151-165) in `PCNO/DiffPCNO/2D_Flood/Flood_sampling.py` according to the flood scenario you want to predict.    
-Change the path in `PCNO/DiffPCNO/2D_Flood/Flood_sampling.py` at Line 221: `root=...` to your directory where checkpoints of DiffPCNO are stored.   
-Change the path in `PCNO/DiffPCNO/2D_Flood/Flood_sampling.py` at Line 250: `path_model_con=...` to your directory where checkpoints of PCNO are stored. 
-Change the data path (Lines 257-260) in `PCNO/DiffPCNO/2D_Flood/Flood_sampling.py` to your directory containing the testing flood datasets.      
+Change the path in `PCNO/DiffPCNO/2D_Flood/Flood_sampling.py` at Line 221: `root=...` to your directory where checkpoints of DiffPCNO are stored.     
+Change the path in `PCNO/DiffPCNO/2D_Flood/Flood_sampling.py` at Line 250: `path_model_con=...` to your directory where checkpoints of PCNO are stored.     
+Change the data path (Lines 257-260) in `PCNO/DiffPCNO/2D_Flood/Flood_sampling.py` to your directory containing the testing flood datasets.        
 Change testing timesteps in `PCNO/DiffPCNO/2D_Flood/Flood_sampling.py` at Line 289: `T_test=...` to your testing scenario.  
 Change the path in `PCNO/DiffPCNO/2D_Flood/Flood_sampling.py` at Line 676: `log_dir =...` to save the visualization results.    
 Run `PCNO/DiffPCNO/2D_Flood/Flood_sampling.py` to obtain flood forecasting results `pred` and uncertainty results `pred_std` using DiffPCNO. 
