@@ -109,7 +109,7 @@ random.seed(args.seed)
 
 data_aug = "aug" in args.model_type
 
-# FNO data specs
+# FNO data speces
 # Pakistan flood
 Sy = 810
 Sx = 441
