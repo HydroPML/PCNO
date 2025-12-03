@@ -54,7 +54,7 @@ parser = argparse.ArgumentParser()
 
 parser.add_argument("--results_path", type=str, default="/Path_to/PCNO/results/Flood/", help="path to store results")
 parser.add_argument("--suffix", type=str, default="seed1", help="suffix to add to the results path")
-parser.add_argument("--txt_suffix", type=str, default="Flood_PCNO_288_seed1", help="suffix to add to the results txt")
+parser.add_argument("--txt_suffix", type=str, default="Flood_PCNO_seed1", help="suffix to add to the results txt")
 parser.add_argument("--super", type=str, default=False, help="enable superres testing")
 parser.add_argument("--verbose",type=str, default=True)
 parser.add_argument("--rain",type=str, default=True)
