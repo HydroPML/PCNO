@@ -25,46 +25,60 @@ Download the checkpoints and prepare the data.
 ## 1D Kuramoto–Sivashinsky dynamics
 ### PCNO
 Change the path in `PCNO/PCNO/1D_KSE/experiments_test_PCNO.py` at Line 55: `results_path` to save the results.  
-Change the path in `PCNO/PCNO/1D_KSE/experiments_test_PCNO.py` at Line 160: `root =...` to your directory where checkpoints of PCNO are stored.  
-Change the data path in `PCNO/PCNO/1D_KSE/experiments_test_PCNO.py` (Lines 234-239) to your directory containing the training, validation, and testing datasets.  
+Change the path in `PCNO/PCNO/1D_KSE/experiments_test_PCNO.py` at Line 160: `root=...` to your directory where checkpoints of PCNO are stored.  
+Change the data path in `PCNO/PCNO/1D_KSE/experiments_test_PCNO.py` (Lines 234-239) to your directory containing the testing datasets.  
 Run `python PCNO/PCNO/1D_KSE/experiments_test_PCNO.py` to predict Kuramoto-Sivashinsky dynamics using PCNO.  
 ### DiffPCNO
 Change the path in `PCNO/DiffPCNO/1D_KSE/KSE_Sampling.py` at Line 57: `results_path` to save the results.  
-Change the path in `PCNO/DiffPCNO/1D_KSE/KSE_Sampling.py` at Line 193: `root =...` to your directory where checkpoints of DiffPCNO are stored.  
-Change the path in `PCNO/DiffPCNO/1D_KSE/KSE_Sampling.py` at Line 219: `path_model_con =...` to your directory where checkpoints of PCNO are stored.  
-Change the data path in `PCNO/DiffPCNO/1D_KSE/KSE_Sampling.py` (Lines 299-306) to your directory containing the training, validation, and testing datasets.  
-Change the path in `PCNO/DiffPCNO/1D_KSE/KSE_Sampling.py` at Line 765: `movie_dir =...` to save the visualization results.  
+Change the path in `PCNO/DiffPCNO/1D_KSE/KSE_Sampling.py` at Line 193: `root=...` to your directory where checkpoints of DiffPCNO are stored.  
+Change the path in `PCNO/DiffPCNO/1D_KSE/KSE_Sampling.py` at Line 219: `path_model_con=...` to your directory where checkpoints of PCNO are stored.  
+Change the data path in `PCNO/DiffPCNO/1D_KSE/KSE_Sampling.py` (Lines 299-306) to your directory containing the testing datasets.  
+Change the path in `PCNO/DiffPCNO/1D_KSE/KSE_Sampling.py` at Line 765: `movie_dir=...` to save the visualization results.  
 Run `PCNO/DiffPCNO/1D_KSE/KSE_Sampling.py` to obtain prediction results `pred` and uncertainty results `pred_std` using DiffPCNO.  
 ### PCNO-Refiner
 Change the path in `PCNO/PCNO-Refiner/KSE_Sampling.py` at Line 54: `results_path` to save the results.  
-Change the path in `PCNO/PCNO-Refiner/KSE_Sampling.py` at Line 189: `root =...` to your directory where checkpoints of PCNO-Refiner are stored.  
-Change the path in `PCNO/PCNO-Refiner/KSE_Sampling.py` at Line 214: `path_model_con = ...` to your directory where checkpoints of PCNO are stored.  
-Change the data path in `PCNO/PCNO-Refiner/KSE_Sampling.py` (Lines 289-296) to your directory containing the training, validation, and testing datasets.  
-Change the path in `PCNO/PCNO-Refiner/KSE_Sampling.py` at Line 708: `movie_dir =...` to save the visualization results.  
+Change the path in `PCNO/PCNO-Refiner/KSE_Sampling.py` at Line 189: `root=...` to your directory where checkpoints of PCNO-Refiner are stored.  
+Change the path in `PCNO/PCNO-Refiner/KSE_Sampling.py` at Line 214: `path_model_con= ...` to your directory where checkpoints of PCNO are stored.  
+Change the data path in `PCNO/PCNO-Refiner/KSE_Sampling.py` (Lines 289-296) to your directory containing the testing datasets.  
+Change the path in `PCNO/PCNO-Refiner/KSE_Sampling.py` at Line 708: `movie_dir=...` to save the visualization results.  
 Run `PCNO/PCNO-Refiner/KSE_Sampling.py` to obtain prediction results `pred` and uncertainty results `pred_std` using PCNO-Refiner.  
 
 ## 2D Kolmogorov turbulent flow
 ### PCNO
 Change the path in `PCNO/PCNO/2D_Kolmogorov/experiments_test_PCNO.py` at Line 54: `results_path` to save the results.    
 Change the data path in `PCNO/PCNO/2D_Kolmogorov/experiments_test_PCNO.py` at Line 57: `data_path` to your directory containing the NS datasets.   
-Change the path in `PCNO/PCNO/2D_Kolmogorov/experiments_test_PCNO.py` at Line 193: `root =...` to your directory where checkpoints of PCNO are stored.     
+Change the path in `PCNO/PCNO/2D_Kolmogorov/experiments_test_PCNO.py` at Line 193: `root=...` to your directory where checkpoints of PCNO are stored.     
 Run `PCNO/PCNO/2D_Kolmogorov/experiments_test_PCNO.py` to predict Kolmogorov turbulent flow  in velocity form using PCNO.    
 ### DiffPCNO
 Change the path in `PCNO/DiffPCNO/2D_Kolmogorov/Kolmogorov_sampling.py` at Line 56: `results_path` to save the results.    
 Change the data path in `PCNO/DiffPCNO/2D_Kolmogorov/Kolmogorov_sampling.py` at Line 59: `data_path` to your directory containing the NS datasets.   
-Change the path in `PCNO/DiffPCNO/2D_Kolmogorov/Kolmogorov_sampling.py` at Line 209: `root =...` to your directory where checkpoints of DiffPCNO are stored.    
-Change the path in `PCNO/DiffPCNO/2D_Kolmogorov/Kolmogorov_sampling.py` at Line 237: `path_model_con =...` to your directory where checkpoints of PCNO are stored.    
-Change the path in `PCNO/DiffPCNO/2D_Kolmogorov/Kolmogorov_sampling.py` at Line 807 and Line 842: `movie_dir =...` to save the visualization results.    
+Change the path in `PCNO/DiffPCNO/2D_Kolmogorov/Kolmogorov_sampling.py` at Line 209: `root=...` to your directory where checkpoints of DiffPCNO are stored.    
+Change the path in `PCNO/DiffPCNO/2D_Kolmogorov/Kolmogorov_sampling.py` at Line 237: `path_model_con=...` to your directory where checkpoints of PCNO are stored.    
+Change the path in `PCNO/DiffPCNO/2D_Kolmogorov/Kolmogorov_sampling.py` at Line 807 and Line 842: `movie_dir=...` to save the visualization results.    
 Run `PCNO/DiffPCNO/2D_Kolmogorov/Kolmogorov_sampling.py` to obtain prediction results `pred` and uncertainty results `pred_std` using DiffPCNO.    
 ## 2D Real-world flood forecasting
 The surrogate models (PCNO and DiffPCNO) are designed for large-scale, cross-regional, and downscaled flood forecasting.  We use FloodCastBench to evaluate surrogate models. The dataset comprises four large-scale
 floods: Pakistan flood, Mozambique flood, Australia flood, and UK flood. To assess the effectiveness and transferability of these models, we define two scenarios: low-fidelity forecasting
 using the Pakistan and Mozambique flood datasets (480 m spatial, 5 min temporal resolution) and high-fidelity forecasting using the Australia and UK flood datasets (60 m or 30 m spatial, 5 min temporal resolution).  
 ![FloodCastBench](https://github.com/HydroPML/PCNO/blob/main/figures/fig6.png)
-**Welcome to test more flood forecasting scenarios**
-## Low-fidelity flood forecasting
-
-## High-fidelity flood forecasting
+**Welcome to test more flood forecasting scenarios.**
+### PCNO
+Change the path in `PCNO/PCNO/2D_Flood/experiments_Flood_test.py` at Line 55: `results_path` to save the results.    
+Change timesteps `T` (Line 62) and sample sizes (Line 63-65) in `PCNO/PCNO/2D_Flood/experiments_Flood_test.py` to your forecasting scenario.   
+Change the space sizes `Sy` and `Sx` (Line 113-127) in `PCNO/PCNO/2D_Flood/experiments_Flood_test.py` according to the flood scenario you want to predict.  
+Change the path in `PCNO/PCNO/2D_Flood/experiments_Flood_test.py` at Line 183: `root=...` to your directory where checkpoints of PCNO are stored.     
+Change the data path in `PCNO/PCNO/2D_Flood/experiments_Flood_test.py` at Line 261: `path_test=...` to your directory containing the testing datasets.    
+Run `PCNO/PCNO/2D_Flood/experiments_Flood_test.py` to predict spatiotemporal floods using PCNO.    
+### DiffPCNO
+Change the path in `PCNO/DiffPCNO/2D_Flood/Flood_sampling.py` at Line 59: `results_path` to save the results.    
+Change timesteps `T`and sample sizes (Line 66-88) in `PCNO/DiffPCNO/2D_Flood/Flood_sampling.py` to your forecasting scenario.  
+Change the space sizes `Sy` and `Sx` (Line 151-165) in `PCNO/DiffPCNO/2D_Flood/Flood_sampling.py` according to the flood scenario you want to predict.    
+Change the path in `PCNO/DiffPCNO/2D_Flood/Flood_sampling.py` at Line 221: `root=...` to your directory where checkpoints of DiffPCNO are stored.   
+Change the path in `PCNO/DiffPCNO/2D_Flood/Flood_sampling.py` at Line 250: `path_model_con=...` to your directory where checkpoints of PCNO are stored. 
+Change the data path (Lines 257-260) in `PCNO/DiffPCNO/2D_Flood/Flood_sampling.py` to your directory containing the testing flood datasets.      
+Change testing timesteps in `PCNO/DiffPCNO/2D_Flood/Flood_sampling.py` at Line 289: `T_test=...` to your testing scenario.  
+Change the path in `PCNO/DiffPCNO/2D_Flood/Flood_sampling.py` at Line 676: `log_dir =...` to save the visualization results.    
+Run `PCNO/DiffPCNO/2D_Flood/Flood_sampling.py` to obtain flood forecasting results `pred` and uncertainty results `pred_std` using DiffPCNO. 
 ## 2D and 3D Atmospheric modeling
 
 # 👻​ Training 
