@@ -57,7 +57,14 @@ Change the path in `PCNO/DiffPCNO/2D_Kolmogorov/Kolmogorov_sampling.py` at Line 
 Change the path in `PCNO/DiffPCNO/2D_Kolmogorov/Kolmogorov_sampling.py` at Line 807 and Line 842: `movie_dir =...` to save the visualization results.    
 Run `PCNO/DiffPCNO/2D_Kolmogorov/Kolmogorov_sampling.py` to obtain prediction results `pred` and uncertainty results `pred_std` using DiffPCNO.    
 ## 2D Real-world flood forecasting
+The surrogate models (PCNO and DiffPCNO) are designed for large-scale, cross-regional, and downscaled flood forecasting.  We use FloodCastBench to evaluate surrogate models. The dataset comprises four large-scale
+floods: Pakistan flood, Mozambique flood, Australia flood, and UK flood. To assess the effectiveness and transferability of these models, we define two scenarios: low-fidelity forecasting
+using the Pakistan and Mozambique flood datasets (480 m spatial, 5 min temporal resolution) and high-fidelity forecasting using the Australia and UK flood datasets (60 m or 30 m spatial, 5 min temporal resolution).  
+![FloodCastBench](https://github.com/HydroPML/PCNO/blob/main/figures/fig6.png)
+**Welcome to test more flood forecasting scenarios**
+## Low-fidelity flood forecasting
 
+## High-fidelity flood forecasting
 ## 2D and 3D Atmospheric modeling
 
 # 👻​ Training 
