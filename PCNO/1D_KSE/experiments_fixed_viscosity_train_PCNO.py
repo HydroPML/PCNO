@@ -195,12 +195,6 @@ elif "radialNO3d" in args.model_type:
     reflection = "p4m" in args.model_type
     model = radialNO3d(num_channels=num_channels, initial_step=initial_step, modes=modes, time_modes=time_modes,
                        width=width, reflection=reflection, grid_type=grid_type, time_pad=args.time_pad).cuda()
-elif args.model_type == "Unet_Rot2d":
-    model = Unet_Rot(input_frames=initial_step * num_channels, output_frames=num_channels, kernel_size=3, N=4).cuda()
-elif args.model_type == "Unet_Rot_M2d":
-    model = Unet_Rot_M(input_frames=initial_step * num_channels, output_frames=num_channels, kernel_size=3, N=4, grid_type=grid_type, width=width).cuda()
-elif args.model_type == "Unet_Rot_3D":
-    model = Unet_Rot_3D(input_frames=initial_step * num_channels, output_frames=num_channels, kernel_size=3, N=4, grid_type=grid_type, width=width).cuda()
 else:
     raise NotImplementedError("Model not recognized")
 
