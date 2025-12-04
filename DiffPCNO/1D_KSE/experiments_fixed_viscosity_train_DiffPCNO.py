@@ -7,12 +7,7 @@ import torch.nn.functional as F
 os.environ["CUDA_VISIBLE_DEVICES"]="0" # Select the available GPU
 from models.oned_unet import Unet
 from models.PCNO1D import PCNO1d
-# from models.GFNO_n6 import GFNO2d, GFNO3d
-# # from models.GFNO_steerable import GFNO2d_steer
-# # from models.Unet import Unet_Rot, Unet_Rot_M, Unet_Rot_3D
-# from models.Ghybrid import Ghybrid2d
-# from models.radialNO import radialNO2d, radialNO3d
-# from models.GCNN import GCNN2d, GCNN3d
+
 from PIL import Image
 import imageio
 import matplotlib.pyplot as plt
