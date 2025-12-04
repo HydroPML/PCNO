@@ -28,7 +28,7 @@ pip install -r requirements.txt
 
 # 🎰 Zero-shot Inference and Sampling
 Download the checkpoints and prepare the data.
-## 1D Kuramoto–Sivashinsky dynamics
+## Kuramoto–Sivashinsky dynamics
 ### PCNO
 Change the path in `PCNO/PCNO/1D_KSE/experiments_test_PCNO.py` at Line 55: `results_path` to save the results.  
 Change the path in `PCNO/PCNO/1D_KSE/experiments_test_PCNO.py` at Line 160: `root=...` to your directory where checkpoints of PCNO are stored.  
@@ -49,7 +49,7 @@ Change the data path in `PCNO/PCNO-Refiner/KSE_Sampling.py` (Lines 289-296) to y
 Change the path in `PCNO/PCNO-Refiner/KSE_Sampling.py` at Line 708: `movie_dir=...` to save the visualization results.  
 Run `PCNO/PCNO-Refiner/KSE_Sampling.py` to obtain prediction results `pred` and uncertainty results `pred_std` using PCNO-Refiner.  
 
-## 2D Kolmogorov turbulent flow
+## Kolmogorov turbulent flow
 ### PCNO
 Change the path in `PCNO/PCNO/2D_Kolmogorov/experiments_test_PCNO.py` at Line 54: `results_path` to save the results.    
 Change the data path in `PCNO/PCNO/2D_Kolmogorov/experiments_test_PCNO.py` at Line 57: `data_path` to your directory containing the NS datasets.   
@@ -62,7 +62,7 @@ Change the path in `PCNO/DiffPCNO/2D_Kolmogorov/Kolmogorov_sampling.py` at Line 
 Change the path in `PCNO/DiffPCNO/2D_Kolmogorov/Kolmogorov_sampling.py` at Line 237: `path_model_con=...` to your directory where checkpoints of PCNO are stored.    
 Change the path in `PCNO/DiffPCNO/2D_Kolmogorov/Kolmogorov_sampling.py` at Line 807 and Line 842: `movie_dir=...` to save the visualization results.    
 Run `PCNO/DiffPCNO/2D_Kolmogorov/Kolmogorov_sampling.py` to obtain prediction results `pred` and uncertainty results `pred_std` using DiffPCNO.    
-## 2D Real-world flood forecasting
+## Real-world flood forecasting
 The surrogate models (PCNO and DiffPCNO) are designed for large-scale, cross-regional, and downscaled flood forecasting.  We use FloodCastBench to evaluate surrogate models. The dataset comprises four large-scale
 floods: Pakistan flood, Mozambique flood, Australia flood, and UK flood. To assess the effectiveness and transferability of these models, we define two scenarios: low-fidelity forecasting
 using the Pakistan and Mozambique flood datasets (480 m spatial, 5 min temporal resolution) and high-fidelity forecasting using the Australia and UK flood datasets (60 m or 30 m spatial, 5 min temporal resolution).  
@@ -101,7 +101,7 @@ Run `PCNO/DiffPCNO/2D_Atmospheric/Atmospheric_sampling.py` to obtain atmospheric
 
 # 👻​ Training 
 After configuring the file paths and parameters, run the following code for different spatiotemporal dynamics.  
-## 1D Kuramoto–Sivashinsky dynamics
+## Kuramoto–Sivashinsky dynamics
 ### PCNO
 `python PCNO/PCNO/1D_KSE/experiments_fixed_viscosity_train_PCNO.py` for Kuramoto–Sivashinsky dynamics with fixed viscosity.    
 `python PCNO/PCNO/1D_KSE/experiments_varying_viscosity_train_PCNO.py` for Kuramoto–Sivashinsky dynamics with varying viscosity.     
@@ -111,12 +111,12 @@ After configuring the file paths and parameters, run the following code for diff
 ### PCNO-Refiner
 `python PCNO/PCNO-Refiner/experiments_1DKSE_fixed_viscosity_train_PCNO-Refiner.py` for Kuramoto–Sivashinsky dynamics with fixed viscosity.     
 `python PCNO/PCNO-Refiner/experiments_1DKSE_varying_viscosity_train_PCNO-Refiner.py` for Kuramoto–Sivashinsky dynamics with varying viscosity.   
-## 2D Kolmogorov turbulent flow
+## Kolmogorov turbulent flow
 ### PCNO
 `python PCNO/PCNO/2D_Kolmogorov/experiments_Kolmogorov_PCNO.py` for Kolmogorov turbulent flow.      
 ### DiffPCNO
 `python PCNO/DiffPCNO/2D_Kolmogorov/experiments_Kolmogorov_train_DiffPCNO.py` for Kolmogorov turbulent flow.    
-## 2D Real-world flood forecasting
+## Real-world flood forecasting
 ### PCNO
 `python PCNO/PCNO/2D_Flood/experiments_Pakistan_train_PCNO.py` for low-fidelity Pakistan flood forecasting.   
 `python PCNO/PCNO/2D_Flood/experiments_Australia_train_PCNO.py` for high-fidelity Australia flood forecasting.   
