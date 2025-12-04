@@ -79,7 +79,19 @@ Change the data path (Lines 257-260) in `PCNO/DiffPCNO/2D_Flood/Flood_sampling.p
 Change testing timesteps in `PCNO/DiffPCNO/2D_Flood/Flood_sampling.py` at Line 289: `T_test=...` to your testing scenario.  
 Change the path in `PCNO/DiffPCNO/2D_Flood/Flood_sampling.py` at Line 676: `log_dir =...` to save the visualization results.    
 Run `PCNO/DiffPCNO/2D_Flood/Flood_sampling.py` to obtain flood forecasting results `pred` and uncertainty results `pred_std` using DiffPCNO. 
-## 2D and 3D Atmospheric modeling
+## Atmospheric modeling
+### PCNO
+Change the path in `PCNO/PCNO/2D_Atmospheric/experiments_Atmospheric_test.py` at Line 57: `results_path` to save the results.      
+Change the data path in `PCNO/PCNO/2D_Atmospheric/experiments_Atmospheric_test.py` at Line 59: `data_path` to your directory containing the atmospheric datasets.     
+Change the path in `PCNO/PCNO/2D_Atmospheric/experiments_Atmospheric_test.py` at Line 187: `root=...` to your directory where checkpoints of PCNO are stored.         
+Run `PCNO/PCNO/2D_Atmospheric/experiments_Atmospheric_test.py` to predict 2D gravity waves in atmospheric modeling using PCNO.      
+### DiffPCNO
+Change the path in `PCNO/DiffPCNO/2D_Atmospheric/Atmospheric_sampling.py` at Line 59: `results_path` to save the results.    
+Change the data path in `PCNO/DiffPCNO/2D_Atmospheric/Atmospheric_sampling.py` at Line 62: `data_path` to your directory containing the atmospheric datasets.     
+Change the path in `PCNO/DiffPCNO/2D_Atmospheric/Atmospheric_sampling.py` at Line 214: `root=...` to your directory where checkpoints of DiffPCNO are stored.     
+Change the path in `PCNO/DiffPCNO/2D_Atmospheric/Atmospheric_sampling.py` at Line 241: `path_model_con=...` to your directory where checkpoints of PCNO are stored.           
+Change the path in `PCNO/DiffPCNO/2D_Atmospheric/Atmospheric_sampling.py` at Line 800: `log_dir =...` to save the visualization and rollout MSE results.    
+Run `PCNO/DiffPCNO/2D_Atmospheric/Atmospheric_sampling.py` to obtain atmospheric modeling results `pred` and uncertainty results `pred_std` using DiffPCNO. 
 
 # 👻​ Training 
 After configuring the file paths and parameters, run the following code for different spatiotemporal dynamics.  
@@ -105,5 +117,10 @@ After configuring the file paths and parameters, run the following code for diff
 ### DiffPCNO
 `python PCNO/DiffPCNO/2D_Flood/experiments_Pakistan_train_DiffPCNO.py` for low-fidelity Pakistan flood forecasting.   
 `python PCNO/DiffPCNO/2D_Flood/experiments_Australia_train_DiffPCNO.py` for high-fidelity Australia flood forecasting.   
-## 2D and 3D Atmospheric modeling
+## Atmospheric modeling
+### PCNO
+`python PCNO/PCNO/2D_Atmospheric/experiments_Atmospheric_train_PCNO.py` for 2D atmospheric modeling.     
+`python PCNO/PCNO/3D_Atmospheric/experiments_Atmospheric_train_PCNO3D.py` for 3D atmospheric modeling.   
+### DiffPCNO
+`python PCNO/DiffPCNO/2D_Atmospheric/experiments_Atmospheric_train_DiffPCNO.py` for atmospheric modeling.   
 
