@@ -24,6 +24,7 @@ You can download the model weights for PCNO, DiffPCNO, and PCNO-Refiner from [Li
 If you encounter errors about missing packages when running the code, you can install recommended dependencies using the `requirements.txt` file:
 ```bash
 pip install -r requirements.txt
+```
 
 # 🎰 Zero-shot Inference and Sampling
 Download the checkpoints and prepare the data.
